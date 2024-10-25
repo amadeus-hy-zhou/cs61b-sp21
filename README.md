@@ -21,4 +21,9 @@
     |    |--add
     |    |--remove
 ```
-## 2.2 Method
+## 2.2 Classes and Data Strucutre
+### 2.2.1 Commit
+#### Instance Vairables
+* Message - contains the message of a commit
+* Parent - contains the information of the previous commit 
+* timeStamp / Date - time at which a commit was created
