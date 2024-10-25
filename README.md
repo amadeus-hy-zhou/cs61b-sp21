@@ -9,7 +9,8 @@
 
 # 2. project2 Gitlet
 ## 2.1 Structure
-`.gitlet\
+```
+.gitlet
     |--objects
     |    |--commit
     |    |--blob
@@ -18,5 +19,6 @@
     |--HEAD
     |--stage
     |    |--add
-    |    |--remove`
+    |    |--remove
+```
 ## 2.2 Method
