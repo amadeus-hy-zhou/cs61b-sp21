@@ -8,3 +8,15 @@
 2. the usage of Makefile to manage projects
 
 # 2. project2 Gitlet
+## 2.1 Structure
+.gitlet
+    |--objects
+    |    |--commit
+    |    |--blob
+    |--refs
+    |    |--branches
+    |--HEAD
+    |--stage
+    |    |--add
+    |    |--remove
+## 2.2 Method
