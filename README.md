@@ -4,8 +4,8 @@
 3. maven 3.8
 
 # 1. lab6
-1. the usage of 'File' class
-2. the usage of Makefile to manage projects
+1. 'File' class and serializable
+2. Makefile, Testing and Debug
 
 # 2. project2 Gitlet
 ## 2.1 Structure
@@ -27,3 +27,6 @@
 * Message - contains the message of a commit
 * Parent - contains the information of the previous commit 
 * timeStamp / Date - time at which a commit was created
+### 2.2.2 Blob
+definition: snapshot of relevant files
+#### Instance Vairables
