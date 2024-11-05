@@ -22,18 +22,21 @@ public class Commit implements Serializable{
      */
 
     /** The message of this Commit. */
-    private String message;
+    private final String message;
 
-    private Date currentTime;
+    private final Date currentTime;
 
     private String id;
 
-    private List<String> parents;
+    private final List<String> parents;
 
-    private String timeStamp;
+    private final String timeStamp;
 
     public Commit(){
-
+        this.currentTime = new Date(0);
+        this.timeStamp = dateToTimeStamp(currentTime);
+        this.message = "initial commit";
+        this.parents = new ArrayList<>();
     }
 
     /**
