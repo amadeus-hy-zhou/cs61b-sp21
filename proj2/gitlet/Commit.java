@@ -1,16 +1,18 @@
 package gitlet;
 
-// TODO: any imports you need here
-
-import java.util.Date; // TODO: You'll likely use this in this class
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.io.File;
+import java.io.Serializable;
 
 /** Represents a gitlet commit object.
  *  TODO: It's a good idea to give a description here of what else this Class
  *  does at a high level.
  *
- *  @author TODO
+ *  @author amadeus_zhy
  */
-public class Commit {
+public class Commit implements Serializable{
     /**
      * TODO: add instance variables here.
      *
@@ -22,5 +24,45 @@ public class Commit {
     /** The message of this Commit. */
     private String message;
 
-    /* TODO: fill in the rest of this class. */
+    private Date currentTime;
+
+    private String id;
+
+    private String timeStamp;
+
+    public Commit(){
+
+    }
+
+    /**
+     * Get the Date instance when a commit object is created.
+     *
+     * @return Date instance
+     */
+    public Date getCurrentTime(){
+        return currentTime;
+    }
+
+    /**
+     * Transform Date instance into TimeStamp instance.
+     *
+     * @param date Date instance
+     * @return TimeStamp instance in the form of String.
+     */
+    private static String dateToTimeStamp(Date date){
+        DateFormat dateFormat = new SimpleDateFormat("EEE MMM d HH:mm:ss yyyy Z", Locale.US);
+        return dateFormat.format(date);
+    }
+
+    public String getMessage(){
+        return message;
+    }
+
+    public String getTimeStamp(){
+        return timeStamp;
+    }
+
+    public String getId(){
+        return id;
+    }
 }
