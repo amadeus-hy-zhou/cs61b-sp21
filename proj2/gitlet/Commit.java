@@ -28,6 +28,8 @@ public class Commit implements Serializable{
 
     private String id;
 
+    private List<String> parents;
+
     private String timeStamp;
 
     public Commit(){
@@ -54,6 +56,9 @@ public class Commit implements Serializable{
         return dateFormat.format(date);
     }
 
+    public List<String> getParentsCommitId(){
+        return parents;
+    }
     public String getMessage(){
         return message;
     }
